@@ -24,7 +24,7 @@ section {
 }
 
 body.clicked section {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 section#about {
@@ -32,7 +32,7 @@ section#about {
 }
 
 section#products {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 section#services {
@@ -65,6 +65,11 @@ div#open svg rect.a {
           transform: translate(10px, 12px);
 }
 
+body.clicked div#open svg rect.a {
+  -webkit-transform: translate(13px, 12px) rotate(0.125turn);
+          transform: translate(13px, 12px) rotate(0.125turn);
+}
+
 div#open svg rect.b {
   -webkit-transform: translate(10px, 19px);
           transform: translate(10px, 19px);
@@ -77,6 +82,11 @@ body.clicked div#open svg rect.b {
 div#open svg rect.c {
   -webkit-transform: translate(10px, 26px);
           transform: translate(10px, 26px);
+}
+
+body.clicked div#open svg rect.c {
+  -webkit-transform: translate(12px, 26px) rotate(-0.125turn);
+          transform: translate(12px, 26px) rotate(-0.125turn);
 }
 
 nav#nav {
